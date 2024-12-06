@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<timetable><вторник>
+<name>осн. дискр. математики</name>
+<type>лекция</type>
+<weeks>чётная, нечётная</weeks>
+<start_time>"17:00"</start_time>
+<end_time>"18:30"</end_time>
+<teacher>Карпов Дмитрий Валерьевич</teacher>
+<building>Кронверкский пр., д.49, лит.А</building>
+<classroom>1419</classroom>
+</вторник>
+<вторник>
+<name>осн. дискр. математики</name>
+<type>практика</type>
+<weeks>чётная, нечётная</weeks>
+<start_time>"18:40"</start_time>
+<end_time>"20:10"</end_time>
+<teacher>Карпов Дмитрий Валерьевич</teacher>
+<building>Кронверкский пр., д.49, лит.А</building>
+<classroom>1428</classroom>
+</вторник>
+<четверг>
+<name>ОПД</name>
+<type>лабораторная</type>
+<weeks>чётная</weeks>
+<start_time>"08:20"</start_time>
+<end_time>"09:50"</end_time>
+<teacher>Блохина Елена Николаевна</teacher>
+<building>Кронверкский пр., д.49, лит.А</building>
+<classroom>2117</classroom>
+</четверг>
+<четверг>
+<name>ОПД</name>
+<type>лабораторная</type>
+<weeks>чётная</weeks>
+<start_time>"10:00"</start_time>
+<end_time>"11:30"</end_time>
+<teacher>Блохина Елена Николаевна</teacher>
+<building>Кронверкский пр., д.49, лит.А</building>
+<classroom>2117</classroom>
+</четверг>
+<четверг>
+<name>Программирование</name>
+<type>лабораторная</type>
+<weeks>чётная</weeks>
+<start_time>"11:40"</start_time>
+<end_time>"13:10"</end_time>
+<teacher>Чупанов Аликылыч Алибекович</teacher>
+<building>Кронверкский пр., д.49, лит.А</building>
+<classroom>1338</classroom>
+</четверг>
+<четверг>
+<name>Программирование</name>
+<type>лабораторная</type>
+<weeks>чётная</weeks>
+<start_time>"13:30"</start_time>
+<end_time>"15:00"</end_time>
+<teacher>Чупанов Аликылыч Алибекович</teacher>
+<building>Кронверкский пр., д.49, лит.А</building>
+<classroom>1338</classroom>
+</четверг>
+<четверг>
+<name>ИРК</name>
+<type>практика</type>
+<weeks>нечетная</weeks>
+<start_time>"10:00"</start_time>
+<end_time>"11:30"</end_time>
+<teacher>Щеглова Иванна Павловна</teacher>
+<building>Кронверкский пр., д.49, лит.А</building>
+<classroom>2412</classroom>
+</четверг>
+<четверг>
+<name>ИРК</name>
+<type>лекция</type>
+<weeks>нечетная</weeks>
+<start_time>"11:40"</start_time>
+<end_time>"13:10"</end_time>
+<teacher>Жиркова Галина Петровна</teacher>
+<building>Кронверкский пр., д.49, лит.А</building>
+<classroom>1419</classroom>
+</четверг>
+</timetable>

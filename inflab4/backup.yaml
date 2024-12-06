@@ -1,0 +1,67 @@
+table:
+  вторник:
+    - name: осн. дискр. математики
+      type: лекция
+      weeks: чётная, нечётная
+      start_time: "17:00"
+      end_time: "18:30"
+      teacher: Карпов Дмитрий Валерьевич
+      building: Кронверкский пр., д.49, лит.А 
+      classroom: 1419
+    - name: осн. дискр. математики
+      type: практика
+      weeks: чётная, нечётная
+      start_time: "18:40"
+      end_time: "20:10"
+      teacher: Карпов Дмитрий Валерьевич
+      building: Кронверкский пр., д.49, лит.А 
+      classroom: 1428
+  четверг:
+    - name: ОПД
+      type: лабораторная
+      weeks: чётная
+      start_time: "08:20"
+      end_time: "09:50"
+      teacher: Блохина Елена Николаевна
+      building: Кронверкский пр., д.49, лит.А 
+      classroom: 2117
+    - name: ОПД
+      type: лабораторная
+      weeks: чётная
+      start_time: "10:00"
+      end_time: "11:30"
+      teacher: Блохина Елена Николаевна
+      building: Кронверкский пр., д.49, лит.А 
+      classroom: 2117
+    - name: Программирование
+      type: лабораторная
+      weeks: чётная
+      start_time: "11:40"
+      end_time: "13:10"
+      teacher: Чупанов Аликылыч Алибекович
+      building: Кронверкский пр., д.49, лит.А 
+      classroom: 1338
+    - name: Программирование
+      type: лабораторная
+      weeks: чётная
+      start_time: "13:30"
+      end_time: "15:00"
+      teacher: Чупанов Аликылыч Алибекович
+      building: Кронверкский пр., д.49, лит.А 
+      classroom: 1338
+    - name: ИРК
+      type: практика
+      weeks: нечетная
+      start_time: "10:00"
+      end_time: "11:30"
+      teacher: Щеглова Иванна Павловна
+      building: Кронверкский пр., д.49, лит.А 
+      classroom: 2412
+    - name: ИРК
+      type: лекция
+      weeks: нечетная
+      start_time: "11:40"
+      end_time: "13:10"
+      teacher: Жиркова Галина Петровна
+      building: Кронверкский пр., д.49, лит.А 
+      classroom: 1419
