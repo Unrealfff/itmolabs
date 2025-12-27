@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,IAAK;EACH,gBAAgB,ECFM,OAAO;EDG7B,KAAK,ECDW,OAAO;EDEvB,WAAW,EAAE,mBAAmB;EAChC,OAAO,EAAE,MAAM;EACf,aAAa,EAAE,IAAI;;AAGrB,eAAgB;EACd,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;EACnB,GAAG,EAAE,OAAO;EACZ,aAAa,EAAE,IAAI;EACnB,SAAS,EAAE,IAAI",
+"sources": ["_bodyMainPage.scss","../_variables.scss"],
+"names": [],
+"file": "_form.scss"
+}

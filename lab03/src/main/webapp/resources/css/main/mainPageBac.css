@@ -1,0 +1,144 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0 20px 0; }
+  header h2 {
+    margin: 0 0 0 1.5rem;
+    align-content: center; }
+
+header #link-back.ui-linkbutton {
+  border-radius: 0.4rem;
+  border: 0;
+  padding: 4px 8px 4px 16px;
+  background-color: #283039; }
+  header #link-back.ui-linkbutton.ui-state-focus {
+    box-shadow: 0 0 6px #8b5cf6; }
+  header #link-back.ui-linkbutton a {
+    text-decoration: none; }
+  header #link-back.ui-linkbutton a > span.ui-button-text.ui-c {
+    padding-left: 1rem;
+    padding-right: 0.3rem; }
+  header #link-back.ui-linkbutton span {
+    font-size: 16px;
+    line-height: 1;
+    color: #bcc5cf; }
+    header #link-back.ui-linkbutton span.ui-button-icon-left.ui-icon.ui-c.fas.fa-arrow-left {
+      font-size: 14px;
+      padding-top: 2px; }
+
+body {
+  background-color: #101922;
+  color: #e3e4e6;
+  font-family: 'Inter', sans-serif;
+  padding: 0 40px;
+  margin-bottom: 20px; }
+
+#form-and-graph {
+  display: flex;
+  flex-direction: row;
+  gap: 25px 3%;
+  margin-bottom: 25px;
+  flex-wrap: wrap; }
+
+body {
+  background-color: #101922;
+  color: #e3e4e6;
+  font-family: 'Inter', sans-serif;
+  padding: 0 40px;
+  margin-bottom: 20px; }
+
+#form-and-graph {
+  display: flex;
+  flex-direction: row;
+  gap: 25px 3%;
+  margin-bottom: 25px;
+  flex-wrap: wrap; }
+
+/*# sourceMappingURL=_form.scss.map */
+svg {
+  display: block;
+  background-color: #283039;
+  border-radius: 8px; }
+
+#graph-container {
+  background-color: #111418;
+  padding: 20px;
+  border-radius: 12px; }
+  #graph-container h3 {
+    margin: 5px 0;
+    font-size: 20px; }
+
+#result-table .ui-datatable-tablewrapper table thead th, #result-table .ui-datatable-tablewrapper table tbody tr td {
+  background-color: #111418;
+  color: #ffffff;
+  border: 0; }
+
+#result-table .ui-datatable-tablewrapper table thead th {
+  color: #bcc5cf; }
+#result-table .ui-datatable-tablewrapper table thead tr {
+  border-bottom: solid 2px #374151; }
+#result-table .ui-datatable-tablewrapper table tbody tr {
+  border-bottom: solid 2px #1e2836; }
+  #result-table .ui-datatable-tablewrapper table tbody tr td {
+    color: #ffffff; }
+    #result-table .ui-datatable-tablewrapper table tbody tr td.result {
+      vertical-align: center; }
+      #result-table .ui-datatable-tablewrapper table tbody tr td.result .result-text {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: normal;
+        padding: 2px 9px;
+        border-radius: 16px;
+        font-size: 14px; }
+        #result-table .ui-datatable-tablewrapper table tbody tr td.result .result-text.hit {
+          background-color: #143726;
+          color: #4ade80; }
+        #result-table .ui-datatable-tablewrapper table tbody tr td.result .result-text.miss {
+          background-color: #3d1e21;
+          color: #f87171; }
+
+body .ui-datatable .ui-datatable-data tr {
+  background: #111418; }
+
+#table-container {
+  padding: 10px 20px 20px 20px;
+  background-color: #111418;
+  border-radius: 12px; }
+  #table-container h3 {
+    font-size: 20px; }
+
+#top-of-table {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  #top-of-table #clear-table-button {
+    width: 15rem;
+    height: fit-content;
+    background-color: #4a426e;
+    border: #4a426e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px; }
+    #top-of-table #clear-table-button span.ui-button-icon-left.ui-icon.ui-c.fas.fa-trash {
+      position: relative;
+      margin: 2px 0 0 0;
+      color: #c4b5fd;
+      top: 0;
+      font-size: 16px; }
+      #top-of-table #clear-table-button span.ui-button-icon-left.ui-icon.ui-c.fas.fa-trash.ui-state-focus {
+        position: relative;
+        margin: 0 0 0 0;
+        color: #e3e4e6; }
+    #top-of-table #clear-table-button .ui-button-text {
+      padding-left: 20px;
+      color: #c4b5fd; }
+    #top-of-table #clear-table-button.ui-state-focus {
+      box-shadow: 0 0 10px #8b5cf6; }
+
+.ui-growl {
+  position: fixed;
+  top: 0;
+  right: 0; }
+
+/*# sourceMappingURL=mainPageBac.css.map */

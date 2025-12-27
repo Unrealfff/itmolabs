@@ -1,0 +1,116 @@
+@import "../variables";
+
+%table-base
+{
+  background-color: $element-background-color;
+  color: $header-text-color;
+  border: 0;
+}
+
+#result-table {
+  .ui-datatable-tablewrapper {
+    //border-radius: 0 0 12px 12px;
+    table {
+      thead {
+        th {
+          @extend %table-base;
+          color: $back-text-color;
+        }
+
+        tr {
+          border-bottom: solid 2px #374151;
+        }
+      }
+
+      tbody {
+        tr {
+          border-bottom: solid 2px #1e2836;
+
+          td {
+            @extend %table-base;
+            color: $header-text-color;
+            &.result{
+              //height: 100px;
+              //text-align: center;
+              vertical-align: center;
+              //background-color:  #8b5cf6;
+              .result-text{
+                display: inline-block;
+                vertical-align: middle;
+                line-height: normal;
+                padding: 2px 9px;
+                border-radius: 16px;
+
+
+                font-size: 14px;
+                &.hit {
+                  background-color: #143726;
+                  color: #4ade80;
+                }
+                &.miss {
+                  background-color: #3d1e21;
+                  color: #f87171;
+                }
+
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+
+}
+
+body .ui-datatable .ui-datatable-data tr {
+  background: $element-background-color;
+}
+
+#table-container {
+  padding: 10px 20px 20px 20px;
+  background-color: $element-background-color;
+  border-radius: 12px;
+  h3 {
+    font-size: 20px;
+  }
+}
+
+#top-of-table{
+  display: flex;
+  //flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  #clear-table-button {
+    width: 15rem;
+    height: fit-content;
+    background-color: $clear-button-background-color;
+    border: $clear-button-background-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //flex-grow: 0;
+    font-size: 17px;
+    span.ui-button-icon-left.ui-icon.ui-c.fas.fa-trash {
+      position: relative;
+      margin: 2px 0 0 0;
+      color: $clear-button-text-color;
+      top: 0;
+      font-size: 16px;
+      //justify-content: center;
+      &.ui-state-focus {
+        position: relative;
+        margin: 0 0 0 0;
+        color: $main-text-color;
+      }
+    }
+    .ui-button-text {
+      padding-left: 20px;
+      color: $clear-button-text-color;
+    }
+    &.ui-state-focus{
+      box-shadow: 0 0 10px $accent-color;
+    }
+  }
+}
+

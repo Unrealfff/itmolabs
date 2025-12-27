@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <h:outputStylesheet library="css" name="start/startPage.css"/>
+</h:head>
+<h:body>
+    <header>
+        <h2>lab 3 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</h2>
+        <div id="author-info">
+            <p id="name">Букреев Степан Сергеевич</p>
+            <p id="group">P3217</p>
+            <p id="variant">Var: 3999</p>
+        </div>
+    </header>
+
+
+    <div id="time-and-link">
+        <div id="clock">
+            <div class="clock-part">
+                <span class="clock" id="hours">00</span>
+                <span class="clock-label">Hrs</span>
+            </div>
+            <div class="clock-part">
+                <span class="clock" id="minutes">00</span>
+                <span class="clock-label">Min</span>
+            </div>
+            <div class="clock-part">
+                <span class="clock" id="seconds">00</span>
+                <span class="clock-label">Sec</span>
+            </div>
+        </div>
+
+        <p:linkButton id="main-page-link" value="Главная страница" href="main" styleClass="ui-button"/>
+    </div>
+    <h:outputScript library="js" name="clock.js"/>
+</h:body>
+</html>

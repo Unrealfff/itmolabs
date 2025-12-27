@@ -1,0 +1,122 @@
+function createPoint(xPixels, yPixels, result){
+    const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle")
+    circle.setAttribute("r", "5")
+    circle.setAttribute("cx", xPixels.toString())
+    circle.setAttribute("cy", yPixels.toString())
+    circle.setAttribute("stroke-width", "1")
+    circle.setAttribute("fill", result ? "#00f71a" : "#f50c0b")
+    return circle
+}
+
+const graph = document.getElementById("points-holder")
+const svg = document.getElementById("graph")
+
+const centerX = 240
+const centerY = 240
+const rPixels = 180;
+svg.addEventListener("click", event => {
+    const rInput = document.getElementById('input-form:r')
+    if (rInput == null || rInput.value === "" || typeof(parseFloat(rInput.value)) != "number") {
+        PF("messages").show([{
+            summary: "R has not been given",
+            detail: "R must be provided",
+            severity: "error"
+        }]);
+        event.preventDefault()
+        return
+    }
+    //console.log(rInput.value, parseFloat(rInput.value), typeof(parseFloat(rInput.value)), "MEW")
+    const rect = svg.getBoundingClientRect()
+    const xPixels = event.clientX - rect.left
+    const yPixels = event.clientY - rect.top
+    const r = parseFloat(rInput.value)
+    if(r < 1 || r > 4) {
+        PF("messages").show([{
+            summary: "R is out of range",
+            detail: "R is not in [1; 4] range",
+            severity: "error"
+        }]);
+        event.preventDefault()
+        return
+    }
+    const x = (xPixels - centerX) * r / rPixels
+    const y = (centerY - yPixels) * r / rPixels
+
+    addPointFromGraph([
+        {name: 'x',  value: x},
+        {name: 'y',  value: y},
+        {name: 'r', value: r}
+    ]);
+})
+
+function drawPoint(point){
+    if (point === undefined){
+        return
+    }
+    const xPiexels = +point.x * rPixels / +point.r + centerX
+    const yPiexels = - +point.y * rPixels / +point.r + centerY
+    graph.appendChild(createPoint(xPiexels, yPiexels, point.result))
+}
+
+
+function restorePoints(history){
+    graph.innerHTML = ""
+    if (history === null) {
+        return;
+    }
+    graph.innerHTML = ""
+    const rInput = document.getElementById("input-form:r")
+    console.log(rInput.value, "rest")
+    if (rInput === null){
+        return;
+    }
+    rValue = parseFloat(rInput.value)
+    history.forEach(point => {
+        if (point.r === rValue){
+
+            drawPoint(point)
+        }
+    });
+}
+
+function redrawGraph(){
+    const rInput = document.getElementById("input-form:r")
+    if (rInput === null || rInput.value === "" || parseFloat(rInput.value) <= 0){
+        restoreDefault();
+        return;
+    }
+    rValue = parseFloat(rInput.value)
+    console.log(rValue, rInput.value)
+    const halfR = document.querySelectorAll(".rDiv2")
+    halfR.forEach(r => r.textContent = (rValue/2).toString())
+
+    const minusHalfR = document.querySelectorAll(".-rDiv2")
+    minusHalfR.forEach(r => r.textContent = (-rValue/2).toString())
+
+    const r = document.querySelectorAll(".r")
+    r.forEach(r => r.textContent = rValue.toString())
+
+    const minusR = document.querySelectorAll(".-r")
+    minusR.forEach(r => r.textContent = (-rValue).toString())
+}
+
+function restoreDefault(){
+    const halfR = document.querySelectorAll(".rDiv2")
+    halfR.forEach(r => r.textContent = "R/2")
+
+    const minusHalfR = document.querySelectorAll(".-rDiv2")
+    minusHalfR.forEach(r => r.textContent = "-R/2")
+
+    const r = document.querySelectorAll(".r")
+    r.forEach(r => r.textContent = "R")
+
+    const minusR = document.querySelectorAll(".-r")
+    minusR.forEach(r => r.textContent = "-R")
+}
+
+function restoreGraph(history){
+    redrawGraph();
+    restorePoints(history);
+}
+
+
